@@ -3,7 +3,10 @@ import os
 import sys
 import time
 
-# queue: 'cqsub' or 'cqbigsub'
+# queue: 'cqsub' or 'cqbigsub_40'
+#  note: to use the latter you need to run these commands:
+#   echo 'source ~/.bashrc' >> ~/.bash_profile
+#   echo 'export PATH=$PATH:/afs/csail.mit.edu/proj/courses/6.816/bin' >> ~/.bashrc
 # command: the command you want to execute leaving spaces for the parameters
 #  example: "java ParallelPacket 2000 [n] [w] false [trial] 8 [l] [s]
 # params: dictionary from parameter identifier (like 'n') to list of choices
