@@ -64,6 +64,8 @@ def exec6816_qrun(qfile, queue):
 
 		if len(commands) == 0:
 			break
+		else:
+			print 'beginning worker with ' + str(len(commands)) + ' remaining commands'
 
 		# run remaining commands
 		subprocess.call([queue, 'python', 'exec6816.py', qfile])
